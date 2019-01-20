@@ -1,0 +1,158 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/51b62a78412712ff5ca89ad23f93791d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/40dfacdb8396ea09d364fda173bc1509/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d00cbec496f28f6385d0a4fdf01ea6ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/0d7325a1bcf4a68d6c777537889d2085/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/2c9ffe9bbeee115ac0bac42597cef685/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/85a9711292f9663b3542997e9c5e9ea4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8e536898df81dadb09578da2d9335b82/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/1cba4173bad5ee2a22a073b2ab7fdb5b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9b6ee2505c61aa395e940734383d7505/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/526d66bb60ef8b0f5e7fd474dfaf8e12/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/675a9bdaa109230b37b0c51fcc2f4512/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/eec4cda5cb49dd3ea9789abbd6ad3485/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/1bef3494bd66b73de38c55fa3ab6d444/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/689c26c9700c3d98ac1079ff812a4e66/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/adcacf7c13bfbc1fc02bb09d8ece1df1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/05a4de745514d13769e5626337c957ae/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9a845c4ce8610697808ad40d84ee0701/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e84be9c97a1e7c5edc67242702b9d364/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d0c31bad88a4ce182d3cabb43d6a4fb2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/bb6d4bd47697383b94b0c8272c767fdf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/33e6dfcefa9ba34046e6d26e0ca3b679/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9be9a338d6568955a4bfbb39c812df90/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7463a17bc5e73deb7d3b382fccfb3131/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/b43911f905c4894cfc44265a91674574/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/cca0eb7e7dea8b4a1c07ad9fbdc985bc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/08d3a3a27e28d38252a32baadef21d74/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/bebe04873e44f76f4d8f2ee13f12385a/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:3:11-50
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:8:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/40dfacdb8396ea09d364fda173bc1509/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/40dfacdb8396ea09d364fda173bc1509/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/05a4de745514d13769e5626337c957ae/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/05a4de745514d13769e5626337c957ae/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9a845c4ce8610697808ad40d84ee0701/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9a845c4ce8610697808ad40d84ee0701/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/05a4de745514d13769e5626337c957ae/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:13:13-39
+	android:label
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:11:13-45
+	android:roundIcon
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:12:13-58
+	android:icon
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:10:13-47
+	android:allowBackup
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:9:13-39
+	android:theme
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:14:13-44
+activity#com.example.mizuho.weatherapp.MainActivity
+ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:17:17-68
+	android:name
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:19:17-76
+	android:name
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/51b62a78412712ff5ca89ad23f93791d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/51b62a78412712ff5ca89ad23f93791d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/40dfacdb8396ea09d364fda173bc1509/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/40dfacdb8396ea09d364fda173bc1509/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d00cbec496f28f6385d0a4fdf01ea6ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/d00cbec496f28f6385d0a4fdf01ea6ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/0d7325a1bcf4a68d6c777537889d2085/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/0d7325a1bcf4a68d6c777537889d2085/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/2c9ffe9bbeee115ac0bac42597cef685/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/2c9ffe9bbeee115ac0bac42597cef685/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/85a9711292f9663b3542997e9c5e9ea4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/85a9711292f9663b3542997e9c5e9ea4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8e536898df81dadb09578da2d9335b82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8e536898df81dadb09578da2d9335b82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/1cba4173bad5ee2a22a073b2ab7fdb5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/1cba4173bad5ee2a22a073b2ab7fdb5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9b6ee2505c61aa395e940734383d7505/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9b6ee2505c61aa395e940734383d7505/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/526d66bb60ef8b0f5e7fd474dfaf8e12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/526d66bb60ef8b0f5e7fd474dfaf8e12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/675a9bdaa109230b37b0c51fcc2f4512/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/675a9bdaa109230b37b0c51fcc2f4512/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/eec4cda5cb49dd3ea9789abbd6ad3485/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/eec4cda5cb49dd3ea9789abbd6ad3485/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/1bef3494bd66b73de38c55fa3ab6d444/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/1bef3494bd66b73de38c55fa3ab6d444/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/689c26c9700c3d98ac1079ff812a4e66/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/689c26c9700c3d98ac1079ff812a4e66/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/adcacf7c13bfbc1fc02bb09d8ece1df1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/adcacf7c13bfbc1fc02bb09d8ece1df1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/05a4de745514d13769e5626337c957ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/05a4de745514d13769e5626337c957ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9a845c4ce8610697808ad40d84ee0701/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9a845c4ce8610697808ad40d84ee0701/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e84be9c97a1e7c5edc67242702b9d364/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/e84be9c97a1e7c5edc67242702b9d364/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d0c31bad88a4ce182d3cabb43d6a4fb2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d0c31bad88a4ce182d3cabb43d6a4fb2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/bb6d4bd47697383b94b0c8272c767fdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/bb6d4bd47697383b94b0c8272c767fdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/33e6dfcefa9ba34046e6d26e0ca3b679/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/33e6dfcefa9ba34046e6d26e0ca3b679/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9be9a338d6568955a4bfbb39c812df90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/9be9a338d6568955a4bfbb39c812df90/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7463a17bc5e73deb7d3b382fccfb3131/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7463a17bc5e73deb7d3b382fccfb3131/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/b43911f905c4894cfc44265a91674574/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/b43911f905c4894cfc44265a91674574/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/cca0eb7e7dea8b4a1c07ad9fbdc985bc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/cca0eb7e7dea8b4a1c07ad9fbdc985bc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/08d3a3a27e28d38252a32baadef21d74/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/08d3a3a27e28d38252a32baadef21d74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/bebe04873e44f76f4d8f2ee13f12385a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/mizuho/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/bebe04873e44f76f4d8f2ee13f12385a/AndroidManifest.xml:20:5-44
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mizuho/AndroidStudioProjects/Kotlin/WeatherApp/app/src/main/AndroidManifest.xml
