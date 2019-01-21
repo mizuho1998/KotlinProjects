@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 
 import kotlinx.coroutines.*
+import kotlin.system.measureTimeMillis
 
 class MainActivity : AppCompatActivity() {
     val TAG: String = "TEST_MAIN"
@@ -17,15 +18,25 @@ class MainActivity : AppCompatActivity() {
         main1()
         Log.d(TAG, "main1 end")
         Thread.sleep(3000L)     // メインスレッドで待つ
+
         main2()
         Log.d(TAG, "main2 end")
         Thread.sleep(3000L)     // メインスレッドで待つ
+
         main3()
         Log.d(TAG, "main3 end")
+        Thread.sleep(3000L)     // メインスレッドで待つ
         main4()
         Log.d(TAG, "main4 end")
+        Thread.sleep(3000L)     // メインスレッドで待つ
 
+        main5()
+        Log.d(TAG, "main5 end")
+        Thread.sleep(3000L)     // メインスレッドで待つ
 
+        main6()
+        Log.d(TAG, "main6 end")
+        Thread.sleep(3000L)     // メインスレッドで待つ
 
     }
 
@@ -69,5 +80,41 @@ class MainActivity : AppCompatActivity() {
         }
         Log.d(TAG, "main4 coroutin end")
         job.join() // コルーチンが終了するまで待つ
+    }
+
+    fun main5() = runBlocking<Unit> {
+        Log.d(TAG, "main5 start")
+        launch { // context of the parent, main runBlocking coroutine
+            Log.d(TAG, "mian5 main runBlocking      : I'm working in thread ${Thread.currentThread().name}")
+        }
+        launch(Dispatchers.Unconfined) { // not confined -- will work with main thread
+            Log.d(TAG, "main5 Unconfined            : I'm working in thread ${Thread.currentThread().name}")
+        }
+        launch(Dispatchers.Default) { // will get dispatched to DefaultDispatcher
+            Log.d(TAG, "main5 Default               : I'm working in thread ${Thread.currentThread().name}")
+        }
+        launch(newSingleThreadContext("MyOwnThread")) { // will get its own new thread
+            Log.d(TAG, "main5 newSingleThreadContext: I'm working in thread ${Thread.currentThread().name}")
+        }
+    }
+
+    fun main6() = runBlocking<Unit> {
+        Log.d(TAG, "main6 start")
+        val time = measureTimeMillis {
+            val one = async { doSomethingUsefulOne() }
+            val two = async { doSomethingUsefulTwo() }
+            Log.d(TAG, "main6 The answer is ${one.await() + two.await()}")
+        }
+        Log.d(TAG, "mian6 Completed in $time ms")
+    }
+
+    suspend fun doSomethingUsefulOne(): Int {
+        delay(1000L) // pretend we are doing something useful here
+        return 13
+    }
+
+    suspend fun doSomethingUsefulTwo(): Int {
+        delay(1000L) // pretend we are doing something useful here, too
+        return 29
     }
 }
