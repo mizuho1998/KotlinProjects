@@ -85,18 +85,24 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener{ view ->
             Log.d(TAG, "click button")
 
-            GlobalScope.launch {
-                launch(newSingleThreadContext("HttpThread")) { // will get its own new thread
+//            GlobalScope.launch {
+            runBlocking {   // メインスレッドで実行
+                var sentence = ""
+
+                runBlocking(newSingleThreadContext("HttpThread")) { // 新しく立てたスレッド内で実行
                     Log.d(TAG,  "working in thread ${Thread.currentThread().name}")
 
-                    val url = URL("http://weather.livedoor.com/forecast/webservice/json/v1?city=200010")
+                    val spinnerId = spinner.selectedItemId.toInt()
+                    val id = place_id[spinnerId]
+                    val url = URL("http://weather.livedoor.com/forecast/webservice/json/v1?city=$id")
                     val res: String = async { SentHttpRequest(url) }.await()
 
                     Log.d(TAG, res)
-                    val sentence = JsonToSentence(res)
-                    Log.d(TAG, sentence)
-
+                    sentence = async { JsonToSentence(res) }.await()
+                    Log.d(TAG, "asdfasdf $sentence")
                 }
+
+                textView.text = sentence
             }
         }
 
@@ -120,13 +126,6 @@ class MainActivity : AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
         spinner.setSelection(1)
-
-
-        // klaxon test
-        val parser: Parser = Parser.default()
-        val stringBuilder: StringBuilder = StringBuilder("{\"name\":\"Cedric Beust\", \"age\":23}")
-        val json: JsonObject = parser.parse(stringBuilder) as JsonObject
-        Log.d(TAG, "Name : ${json.string("name")}, Age : ${json.int("age")}")
 
     }
 
@@ -172,7 +171,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun JsonToSentence(str: String): String {
+    suspend fun JsonToSentence(str: String): String {
 
         var sentence = ""
 
@@ -216,7 +215,7 @@ class MainActivity : AppCompatActivity() {
                 maxCelsius = max.string("celsius")
 
             // sentenceの更新
-            sentence = """"$sentence
+            sentence = """$sentence
                 |$dateLabel の天気は $telop
                 |最高気温は $maxCelsius
                 |最低気温は $minCelsius
