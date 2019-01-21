@@ -20,12 +20,9 @@ import android.widget.AdapterView.OnItemSelectedListener
 import com.example.mizuho.weatherapp.R.id.spinner
 import android.widget.TextView
 import android.view.ViewGroup
-
-
-
-
-
-
+import com.beust.klaxon.Json
+import com.beust.klaxon.JsonObject
+import com.beust.klaxon.Parser
 
 
 private const val TAG: String = "MAIN_ACTIVITY"
@@ -96,6 +93,8 @@ class MainActivity : AppCompatActivity() {
                     val res: String = async { SentHttpRequest(url) }.await()
 
                     Log.d(TAG, res)
+                    val sentence = JsonToSentence(res)
+                    Log.d(TAG, sentence)
 
                 }
             }
@@ -121,6 +120,13 @@ class MainActivity : AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
         spinner.setSelection(1)
+
+
+        // klaxon test
+        val parser: Parser = Parser.default()
+        val stringBuilder: StringBuilder = StringBuilder("{\"name\":\"Cedric Beust\", \"age\":23}")
+        val json: JsonObject = parser.parse(stringBuilder) as JsonObject
+        Log.d(TAG, "Name : ${json.string("name")}, Age : ${json.int("age")}")
 
     }
 
@@ -163,6 +169,62 @@ class MainActivity : AppCompatActivity() {
 //        Log.d(TAG, sb.toString())
 
         return sb.toString()
+    }
+
+
+    fun JsonToSentence(str: String): String {
+
+        var sentence = ""
+
+        // stringをjsonに変換
+        val parser: Parser = Parser.default()
+        val stringBuilder  = StringBuilder(str)
+        val json: JsonObject = parser.parse(stringBuilder) as JsonObject
+
+        // jsonから必要なデータを取得する
+//        val pinpointLocations = json.array<JsonObject>("pinpointLocations")
+//        val link: String?     = json.string("link")
+        val forecasts         = json.array<JsonObject>("forecasts")
+
+        if (forecasts == null)
+            return ""
+
+        for(i in 0 until forecasts.size) {
+            val dateLabel = forecasts[i].string("dateLabel")
+            val telop     = forecasts[i].string("telop")
+//            val date      = forecasts[i].string("date")
+            val temperature = forecasts[i].obj("temperature")
+
+            if (temperature == null) {
+                sentence = """"$sentence
+                |$dateLabel の天気は $telop
+                |
+                """.trimMargin("|")
+                continue
+            }
+
+            // 最低気温、最高気温の取得
+            val min = temperature.obj("min")
+            val max = temperature.obj("max")
+            var minCelsius: String? = ""
+            var maxCelsius: String? = ""
+
+            if (min != null)
+                minCelsius = min.string("celsius")
+
+            if (max != null)
+                maxCelsius = max.string("celsius")
+
+            // sentenceの更新
+            sentence = """"$sentence
+                |$dateLabel の天気は $telop
+                |最高気温は $maxCelsius
+                |最低気温は $minCelsius
+                |
+                """.trimMargin("|")
+        }
+
+        return sentence
     }
 
 
