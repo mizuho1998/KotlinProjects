@@ -82,30 +82,8 @@ class MainActivity : AppCompatActivity() {
         checkPermission()
 
         textView.text = "知りたい地域を選んでください"
-        button.setOnClickListener{ view ->
-            Log.d(TAG, "click button")
 
-//            GlobalScope.launch {
-            runBlocking {   // メインスレッドで実行
-                var sentence = ""
-
-                runBlocking(newSingleThreadContext("HttpThread")) { // 新しく立てたスレッド内で実行
-                    Log.d(TAG,  "working in thread ${Thread.currentThread().name}")
-
-                    val spinnerId = spinner.selectedItemId.toInt()
-                    val id = place_id[spinnerId]
-                    val url = URL("http://weather.livedoor.com/forecast/webservice/json/v1?city=$id")
-                    val res: String = async { SentHttpRequest(url) }.await()
-
-                    Log.d(TAG, res)
-                    sentence = async { JsonToSentence(res) }.await()
-                    Log.d(TAG, "asdfasdf $sentence")
-                }
-
-                textView.text = sentence
-            }
-        }
-
+        // spinner の設定
         // spinnerで選択可能項目の先頭に空白を追加
         for (i in 0 until place_id.size) {
             if(place_id[i] != "-1")
@@ -127,10 +105,36 @@ class MainActivity : AppCompatActivity() {
         spinner.adapter = adapter
         spinner.setSelection(1)
 
+
+        // button の設定
+        button.text = "検索"
+        button.setOnClickListener{ view ->
+            Log.d(TAG, "click button")
+
+//            GlobalScope.launch {
+            runBlocking {   // メインスレッドで実行
+                var sentence = ""
+
+                runBlocking(Dispatchers.Default) { // 新しく立てたスレッド内で実行
+                    Log.d(TAG,  "working in thread ${Thread.currentThread().name}")
+
+                    val spinnerId = spinner.selectedItemId.toInt()
+                    val id  = place_id[spinnerId]
+                    val url = URL("http://weather.livedoor.com/forecast/webservice/json/v1?city=$id")
+                    val res = sentHttpRequest(url)
+
+                    Log.d(TAG, res)
+                    sentence =  jsonToSentence(res)
+                    Log.d(TAG, "sentence:\n $sentence")
+                }
+
+                textView.text = sentence
+            }
+        }
     }
 
 
-    suspend fun SentHttpRequest(url: URL): String {
+    private fun sentHttpRequest(url: URL): String {
         Log.d(TAG, "start SentHttpRequest")
 
         val urlConnection = url.openConnection() as HttpURLConnection
@@ -150,12 +154,9 @@ class MainActivity : AppCompatActivity() {
 
         urlConnection.connect()
 
-        Log.d(TAG, "2")
 
         val responseCode = urlConnection.responseCode
         Log.d(TAG, "HttpStatusCode:$responseCode")
-
-
         val br = BufferedReader(InputStreamReader(urlConnection.inputStream))
         val sb = StringBuilder()
 
@@ -171,7 +172,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    suspend fun JsonToSentence(str: String): String {
+    private fun jsonToSentence(str: String): String {
 
         var sentence = ""
 
@@ -227,16 +228,9 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
-
-
-
-
-
-    //
-    // パーミッションの確認
-    //
+    /*
+     * パーミッションの確認
+     */
 
     // permissionの確認
     fun checkPermission() {
