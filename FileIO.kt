@@ -1,15 +1,14 @@
-package com.example.mizuho.natureremowidgetkotlin
+package com.example.fileiotest
 
 import android.content.Context
-import android.util.Log
 import java.io.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-class FileRW(val context: Context) {
+class FileIO(private val context: Context) {
 
     // ファイルの削除
-    fun clearFile(file_name: String) {
+    fun delete(file_name: String) {
         // ファイル削除
         context.deleteFile(file_name)
     }
@@ -20,7 +19,6 @@ class FileRW(val context: Context) {
         val currentTime   = System.currentTimeMillis()
         val dataFormat    = SimpleDateFormat("yyyy/MM/dd/HH:mm:ss", Locale.US)
         val cTime: String = dataFormat.format(currentTime)
-        Log.d("debug", cTime)
 
         stringBuffer.append("$cTime: $msg")
         stringBuffer.append(System.getProperty("line.separator")) // 改行
@@ -30,8 +28,14 @@ class FileRW(val context: Context) {
     }
 
     // 文字列をファイルに保存
-    fun writeFileMessage(file_name: String, msg: String) {
+    // ファイルが存在する場合は改行して追記
+    fun write(file_name: String, msg: String) {
         val stringBuffer = StringBuffer()
+        val file = context.getFileStreamPath(file_name)
+
+        if (file.exists()) {
+            stringBuffer.append(System.getProperty("line.separator")) // 改行
+        }
         stringBuffer.append(msg)
 
         val fileOutputStream: FileOutputStream = context.openFileOutput(file_name, Context.MODE_APPEND)
@@ -39,7 +43,7 @@ class FileRW(val context: Context) {
     }
 
     // ファイルを読み出し
-    fun readFile(file_name: String): String {
+    fun read(file_name: String): String {
 
         val stringBuffer = StringBuffer()
 
@@ -51,7 +55,7 @@ class FileRW(val context: Context) {
             var lineBuffer: String? = reader.readLine()
 
             while ( lineBuffer  != null) {
-                stringBuffer.append(lineBuffer);
+                stringBuffer.append(lineBuffer)
                 stringBuffer.append(System.getProperty("line.separator"))
                 lineBuffer = reader.readLine()
             }
